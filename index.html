@@ -1,12 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markup retreat</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Верстай звёздный рейтинг тут -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Star Rating</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="page">
+            <section class="rating-card" aria-labelledby="rating-title">
+                <h1 class="rating-title" id="rating-title">Rate this item</h1>
+
+                <fieldset class="rating" aria-label="5 star rating">
+                    <legend class="visually-hidden">
+                        Choose a rating from 1 to 5 stars
+                    </legend>
+
+                    <input
+                        class="rating-input"
+                        type="radio"
+                        name="stars"
+                        id="star-5"
+                        value="5"
+                    />
+                    <label class="rating-star" for="star-5" title="5 stars">
+                        <span class="visually-hidden">5 stars</span>
+                    </label>
+
+                    <input
+                        class="rating-input"
+                        type="radio"
+                        name="stars"
+                        id="star-4"
+                        value="4"
+                    />
+                    <label class="rating-star" for="star-4" title="4 stars">
+                        <span class="visually-hidden">4 stars</span>
+                    </label>
+
+                    <input
+                        class="rating-input"
+                        type="radio"
+                        name="stars"
+                        id="star-3"
+                        value="3"
+                    />
+                    <label class="rating-star" for="star-3" title="3 stars">
+                        <span class="visually-hidden">3 stars</span>
+                    </label>
+
+                    <input
+                        class="rating-input"
+                        type="radio"
+                        name="stars"
+                        id="star-2"
+                        value="2"
+                    />
+                    <label class="rating-star" for="star-2" title="2 stars">
+                        <span class="visually-hidden">2 stars</span>
+                    </label>
+
+                    <input
+                        class="rating-input"
+                        type="radio"
+                        name="stars"
+                        id="star-1"
+                        value="1"
+                    />
+                    <label class="rating-star" for="star-1" title="1 star">
+                        <span class="visually-hidden">1 star</span>
+                    </label>
+                </fieldset>
+            </section>
+        </main>
+    </body>
 </html>
